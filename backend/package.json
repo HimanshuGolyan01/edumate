@@ -1,0 +1,26 @@
+{
+  "name": "edtech-backend",
+  "version": "1.0.0",
+  "description": "EdTech Platform GraphQL Backend",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "node src/seed.js",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.12.1",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
+    "prisma": "^5.7.1",
+    "@prisma/client": "^5.7.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
